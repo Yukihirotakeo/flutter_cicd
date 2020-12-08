@@ -1,0 +1,7 @@
+git_url("https://" + ENV["PERSONAL_TOKEN"] + "@github.com/Yukihirotakeo/flutter_cicd_certificate")
+
+storage_mode("git")
+
+type("adhoc")
+
+app_identifier(com.example.flutterCicd)
