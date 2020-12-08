@@ -41,7 +41,7 @@ jobs:
       - name: build and app distribution
         env:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          MATCH_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+          # MATCH_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
           FIREBASE_IOS_APP_ID: ${{secrets.FIREBASE_IOS_APP_ID}}
           FIREBASE_APP_TOKEN:  ${{secrets.FIREBASE_APP_TOKEN}}
         run: |
