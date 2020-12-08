@@ -1,4 +1,10 @@
-git_url("https://" + ENV["PERSONAL_TOKEN"] + "@github.com/Yukihirotakeo/flutter_cicd_certificate")
+if ENV["PERSONAL_TOKEN"] != nil
+  git_url("https://" + ENV["PERSONAL_TOKEN"] + "@github.com/Yukihirotakeo/flutter_cicd_certificate")
+else
+  git_url("https://github.com/Yukihirotakeo/flutter_cicd_certificate")
+end
+
+
 
 storage_mode("git")
 
