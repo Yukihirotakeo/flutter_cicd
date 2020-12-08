@@ -24,11 +24,11 @@ jobs:
         with:
           channel: 'stable'
 
-			- name: flutter pub get
-				run: flutter pub get
+      - name: flutter pub get
+        run: flutter pub get
 
-		  - name: flutter test
-				run: flutter test
+      - name: flutter test
+        run: flutter test
 
       - name: Create key.properties
         run: |
