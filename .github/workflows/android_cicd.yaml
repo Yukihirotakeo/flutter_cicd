@@ -13,8 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-				with:
-			    path: main
 
       - name:  Translate secrets of base64 into json
         env:
