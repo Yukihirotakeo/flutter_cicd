@@ -1,4 +1,4 @@
-package com.example.flutter_cicd
+package com.oke331.flutter_cicd
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -10,4 +10,4 @@ storage_mode("git")
 
 type("adhoc")
 
-app_identifier("com.example.flutterCicd")
+app_identifier("com.oke331.flutterCicd")

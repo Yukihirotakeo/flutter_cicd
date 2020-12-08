@@ -19,8 +19,8 @@ platform :ios do
     update_code_signing_settings(
       use_automatic_signing: false,
       code_sign_identity: "iPhone Distribution",
-      team_id: ENV["sigh_com.example.flutterCicd_adhoc_team-id"],
-      profile_name: ENV["sigh_com.example.flutterCicd_adhoc_profile-name"]
+      team_id: ENV["sigh_com.oke331.flutterCicd_adhoc_team-id"],
+      profile_name: ENV["sigh_com.oke331.flutterCicd_adhoc_profile-name"]
     )
 
     gym()
