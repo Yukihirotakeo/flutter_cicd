@@ -41,13 +41,13 @@ jobs:
       - name: Build APK
         run: flutter build apk --release --build-number=$GITHUB_RUN_NUMBER
 
-      - name: Archive apk
-        uses: actions/upload-artifact@v2
-        with:
-          name: app-release.apk
-          path: ./build/app/outputs/apk/release/app-release.apk
+      # - name: Archive apk
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: app-release.apk
+      #     path: ./build/app/outputs/apk/release/app-release.apk
 
-      - name: upload artifact to Firebase App Distribution
+      - name: upload apk to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1.3.2
         with:
           appId: ${{secrets.FIREBASE_ANDROID_APP_ID}}
