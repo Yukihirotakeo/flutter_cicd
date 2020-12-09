@@ -27,7 +27,7 @@ platform :ios do
 
     firebase_app_distribution(
         app: ENV["FIREBASE_IOS_APP_ID"],
-        groups: "Developer",
+        groups: "company",
         firebase_cli_token:  ENV["FIREBASE_APP_TOKEN"],
         release_notes: "ベータ版配信",
     )
