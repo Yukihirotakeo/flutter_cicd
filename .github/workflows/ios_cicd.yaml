@@ -44,6 +44,7 @@ jobs:
           MATCH_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
           FIREBASE_IOS_APP_ID: ${{secrets.FIREBASE_IOS_APP_ID}}
           FIREBASE_APP_TOKEN:  ${{secrets.FIREBASE_APP_TOKEN}}
+          BUILD_NUMBER:  $GITHUB_RUN_NUMBER
         run: |
           cd ios
           fastlane build
