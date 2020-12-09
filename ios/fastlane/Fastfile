@@ -23,6 +23,10 @@ platform :ios do
       profile_name: ENV["sigh_com.oke331.flutterCicd_adhoc_profile-name"]
     )
 
+    increment_build_number(
+      build_number: number_of_commits
+    )
+
     gym()
 
     firebase_app_distribution(

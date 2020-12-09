@@ -39,7 +39,7 @@ jobs:
           echo 'keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}' >> android/key.properties
 
       - name: Build APK
-        run: flutter build apk --release --build-name=0.0.$GITHUB_RUN_NUMBER --build-number=$GITHUB_RUN_NUMBER
+        run: flutter build apk --release --build-name=$GITHUB_RUN_NUMBER --build-number=$GITHUB_RUN_NUMBER
 
       - name: Archive apk
         uses: actions/upload-artifact@v2
